@@ -26,7 +26,7 @@ function Tables() {
         {
           tables.map((table)=>(
             
-            <TableCard key={table.id} name={table.name} status={table.status}  initials={table.initial} />
+            <TableCard key={table.id} name={table.name} status={table.status}  initials={table.initial} seats={table.seats} />
             
           ))
           

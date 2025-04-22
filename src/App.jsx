@@ -6,6 +6,7 @@ import './App.css'
 import Header from './Components/shared/Header'
 import BottomNav from './Components/shared/BottomNav'
 import Tables from './Pages/Tables'
+import Menu from './Pages/Menu'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path='/auth' element={<Auth/>}></Route>
           <Route path='/orders' element={<Orders/>}></Route>
           <Route path='/tables' element={<Tables/>}></Route>
+          <Route path='/menu' element={<Menu/>}></Route>
         </Routes>
         
       </Router>
