@@ -89,7 +89,14 @@ export const tables = [
     { id: 12, name: "Table 12", status: "Available", initial: "JS", seats: 6 },
     { id: 13, name: "Table 13", status: "Booked", initial: "EK", seats: 2 },
     { id: 14, name: "Table 14", status: "Available", initial: "QN", seats: 6 },
-    { id: 15, name: "Table 15", status: "Booked", initial: "TW", seats: 3 }
+    { id: 15, name: "Table 15", status: "Booked", initial: "TW", seats: 3 },
+    { id: 16, name: "Table 11", status: "Booked", initial: "GT", seats: 4 },
+    { id: 17, name: "Table 12", status: "Available", initial: "JS", seats: 6 },
+    { id: 18, name: "Table 13", status: "Booked", initial: "EK", seats: 2 },
+    { id: 19, name: "Table 14", status: "Available", initial: "QN", seats: 6 },
+    { id: 20, name: "Table 15", status: "Booked", initial: "TW", seats: 3 },
+
+
   ];
   
 export const startersItem = [
