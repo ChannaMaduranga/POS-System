@@ -8,8 +8,12 @@ import MenuContainer from '../Components/menu/MenuContainer';
 import CustomerInfo from '../Components/menu/CustomerInfo';
 import CartItem from '../Components/menu/CartItem';
 import Bill from '../Components/menu/Bill';
+import { useSelector } from 'react-redux';
 
 function Menu() {
+
+    const customerData = useSelector(state=>state.customer);
+
     return (
         <section className='bg-[#1f1f1f] h-[calc(100vh-5rem)] overflow-hidden flex gap-3'>
             {/* left */}
@@ -23,8 +27,8 @@ function Menu() {
                         <div className='flex items-center gap-3 cursor-pointer'>
                             <MdRestaurantMenu className='text-[#f5f5f5] text-4xl' />
                             <div className='flex flex-col items-start'>
-                                <h1 className='text-md text-[#f5f5f5] font-semibold tracking-wide'> Customer Name</h1>
-                                <p className='text-xs text-[#ababab] font-medium'>Table No: 2</p>
+                                <h1 className='text-md text-[#f5f5f5] font-semibold tracking-wide'> {customerData.customerName || "Customer Name"}</h1>
+                                <p className='text-xs text-[#ababab] font-medium'>{customerData.tableNo || "N/A"}</p>
                             </div>
                         </div>
 
